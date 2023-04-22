@@ -1,6 +1,6 @@
-package mkaganm.springboottrial.bean.config;
+package mkaganm.springboottrial.config;
 
-import mkaganm.springboottrial.bean.dto.BeanDto;
+import mkaganm.springboottrial.dto.BeanDto;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;

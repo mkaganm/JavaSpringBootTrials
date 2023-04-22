@@ -1,6 +1,6 @@
-package mkaganm.springboottrial.bean.controller;
+package mkaganm.springboottrial.controller;
 
-import mkaganm.springboottrial.bean.config.BeanConfig;
+import mkaganm.springboottrial.config.BeanConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

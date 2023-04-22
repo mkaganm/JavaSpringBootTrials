@@ -1,4 +1,4 @@
-package mkaganm.springboottrial.bean.dto;
+package mkaganm.springboottrial.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
