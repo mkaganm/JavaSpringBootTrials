@@ -1324,3 +1324,60 @@ java.lang.RuntimeException: Driver org.h2.Driver claims to not accept jdbcUrl, j
 2023-04-16T20:09:53.397+03:00  INFO 92785 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
 2023-04-16T20:09:53.406+03:00  INFO 92785 --- [restartedMain] m.s.SpringBootTrialApplication           : Started SpringBootTrialApplication in 0.602 seconds (process running for 768.135)
 2023-04-16T20:09:53.408+03:00  INFO 92785 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-22T03:50:18.046+03:00  INFO 88121 --- [restartedMain] m.s.SpringBootTrialApplication           : Starting SpringBootTrialApplication using Java 19.0.1 with PID 88121 (/Users/kagan.meric/IdeaProjects/myRepos/SpringBootTrial/target/classes started by kagan.meric in /Users/kagan.meric/IdeaProjects/myRepos/SpringBootTrial)
+2023-04-22T03:50:18.047+03:00  INFO 88121 --- [restartedMain] m.s.SpringBootTrialApplication           : No active profile set, falling back to 1 default profile: "default"
+2023-04-22T03:50:18.418+03:00  INFO 88121 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-22T03:50:18.421+03:00  INFO 88121 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2023-04-22T03:50:18.515+03:00  INFO 88121 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-04-22T03:50:18.516+03:00  INFO 88121 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-22T03:50:18.516+03:00  INFO 88121 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-22T03:50:18.528+03:00  INFO 88121 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-22T03:50:18.528+03:00  INFO 88121 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 480 ms
+2023-04-22T03:50:18.549+03:00  INFO 88121 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2023-04-22T03:50:18.552+03:00  INFO 88121 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection conn50: url=jdbc:h2:mem:50895e73-3cec-4664-959c-0e4f9eada078 user=SA
+2023-04-22T03:50:18.552+03:00  INFO 88121 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2023-04-22T03:50:18.552+03:00  INFO 88121 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:50895e73-3cec-4664-959c-0e4f9eada078'
+2023-04-22T03:50:18.578+03:00  INFO 88121 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-22T03:50:18.583+03:00  INFO 88121 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-04-22T03:50:18.590+03:00  INFO 88121 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-22T03:50:18.590+03:00  INFO 88121 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-22T03:50:18.595+03:00  INFO 88121 --- [restartedMain] m.springboottrial.bean.dto.BeanDto       : Bean init
+2023-04-22T03:50:18.607+03:00  WARN 88121 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-22T03:50:18.670+03:00  WARN 88121 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-04-22T03:50:18.773+03:00  INFO 88121 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-22T03:50:18.775+03:00  INFO 88121 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-22T03:50:18.795+03:00  INFO 88121 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-22T03:50:18.803+03:00  INFO 88121 --- [restartedMain] m.s.SpringBootTrialApplication           : Started SpringBootTrialApplication in 0.785 seconds (process running for 2922.858)
+2023-04-22T03:50:18.805+03:00  INFO 88121 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-22T03:50:20.189+03:00  INFO 88121 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 7 class path changes (7 additions, 0 deletions, 0 modifications)
+2023-04-22T03:50:20.192+03:00  INFO 88121 --- [Thread-28] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-22T03:50:20.196+03:00  INFO 88121 --- [Thread-28] m.springboottrial.bean.dto.BeanDto       : Bean finish
+2023-04-22T03:50:20.196+03:00  INFO 88121 --- [Thread-28] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-22T03:50:20.400+03:00  WARN 88121 --- [Thread-28] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-04-22T03:50:20.401+03:00  INFO 88121 --- [Thread-28] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2023-04-22T03:50:20.401+03:00  INFO 88121 --- [Thread-28] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2023-04-22T03:50:20.449+03:00  INFO 88121 --- [restartedMain] m.s.SpringBootTrialApplication           : Starting SpringBootTrialApplication using Java 19.0.1 with PID 88121 (/Users/kagan.meric/IdeaProjects/myRepos/SpringBootTrial/target/classes started by kagan.meric in /Users/kagan.meric/IdeaProjects/myRepos/SpringBootTrial)
+2023-04-22T03:50:20.449+03:00  INFO 88121 --- [restartedMain] m.s.SpringBootTrialApplication           : No active profile set, falling back to 1 default profile: "default"
+2023-04-22T03:50:20.604+03:00  INFO 88121 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-22T03:50:20.606+03:00  INFO 88121 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2023-04-22T03:50:20.670+03:00  INFO 88121 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-04-22T03:50:20.671+03:00  INFO 88121 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-22T03:50:20.671+03:00  INFO 88121 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-22T03:50:20.680+03:00  INFO 88121 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-22T03:50:20.681+03:00  INFO 88121 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 231 ms
+2023-04-22T03:50:20.699+03:00  INFO 88121 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2023-04-22T03:50:20.701+03:00  INFO 88121 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection conn60: url=jdbc:h2:mem:015ae68e-ba20-4aeb-8347-683306e1c1ff user=SA
+2023-04-22T03:50:20.701+03:00  INFO 88121 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2023-04-22T03:50:20.702+03:00  INFO 88121 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:015ae68e-ba20-4aeb-8347-683306e1c1ff'
+2023-04-22T03:50:20.726+03:00  INFO 88121 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-22T03:50:20.729+03:00  INFO 88121 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-04-22T03:50:20.735+03:00  INFO 88121 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-22T03:50:20.735+03:00  INFO 88121 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-22T03:50:20.741+03:00  INFO 88121 --- [restartedMain] m.springboottrial.bean.dto.BeanDto       : Bean init
+2023-04-22T03:50:20.752+03:00  WARN 88121 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-22T03:50:20.799+03:00  WARN 88121 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-04-22T03:50:20.873+03:00  INFO 88121 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-22T03:50:20.876+03:00  INFO 88121 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-22T03:50:20.902+03:00  INFO 88121 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-22T03:50:20.912+03:00  INFO 88121 --- [restartedMain] m.s.SpringBootTrialApplication           : Started SpringBootTrialApplication in 0.477 seconds (process running for 2924.966)
+2023-04-22T03:50:20.914+03:00  INFO 88121 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
