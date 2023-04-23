@@ -3,6 +3,10 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+### LOG ###
+log.blog.log
+log.blog.log.2023-04-16.0.gz
+
 ### STS ###
 .apt_generated
 .classpath
