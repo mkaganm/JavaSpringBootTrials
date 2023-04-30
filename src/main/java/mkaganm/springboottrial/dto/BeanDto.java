@@ -18,14 +18,14 @@ public class BeanDto {
     private String beanData;
 
     // start
-    public void initBeanMethod(){
+    public void initBeanMethod() {
         log.info("Bean init");
         System.out.println("bean init");
     }
 
 
     // finish
-    public void destroyBeanMethod(){
+    public void destroyBeanMethod() {
         log.info("Bean finish");
         System.err.println("bean finish");
     }
