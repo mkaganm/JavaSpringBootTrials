@@ -9,9 +9,9 @@ public class ThymeleafController {
 
     // * http://localhost:8080/thymeleaf_
     // @ResponseBody
-    @GetMapping("/thymeleaf_")
-    public String getThymeleaf_() {
-        return "thymeleaf_";
+    @GetMapping("/thymeleaf1")
+    public String getThymeleaf1() {
+        return "thymeleaf1";
     }
 
     // * http://localhost:8080/thymeleaf2
@@ -28,5 +28,13 @@ public class ThymeleafController {
         model.addAttribute("key_model1", "model value1");
         model.addAttribute("key_model2", "model value2");
         return "thymeleaf_file/thymeleaf3";
+    }
+
+    // * http://localhost:8080/thymeleaf4
+    @GetMapping("/thymeleaf4")
+    public String getThymeleaf4(Model model) {
+        model.addAttribute("key_model1", "model value1");
+        model.addAttribute("key_model2", "model value2");
+        return "thymeleaf4";
     }
 }
