@@ -87,7 +87,8 @@ public class ThymeleafController {
     @GetMapping({"/thymeleaf7", "/thymeleaf7/", "/thymeleaf7/{id}"})
     public String getThymeleaf7(Model model, @PathVariable(name = "id", required = false) Long id) {
 
-        model.addAttribute("key_model1", "id : " + id);
+        if (id != null) model.addAttribute("key_model1", "id : " + id);
+        else model.addAttribute("key_model1", "id : not found");
 
         return "thymeleaf7";
     }
