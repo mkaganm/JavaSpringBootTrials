@@ -81,4 +81,19 @@ public class ThymeleafController {
         model.addAttribute("key_model3", list);
         return "thymeleaf6";
     }
+
+    // * http://localhost:8080/thymeleaf7
+    @GetMapping("/thymeleaf7")
+    public String getThymeleaf7(Model model) {
+
+        ProductDto productDto = ProductDto.builder()
+                .productId(0L)
+                .productName("Product Name")
+                .productPrice(2500)
+                .build();
+
+        model.addAttribute("key_model3", productDto);
+
+        return "thymeleaf7";
+    }
 }
