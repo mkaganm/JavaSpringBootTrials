@@ -83,8 +83,8 @@ public class ThymeleafController {
         return "thymeleaf6";
     }
 
-    // * http://localhost:8080/thymeleaf7/
-    @GetMapping({"/", "/thymeleaf7/{id}"})
+    // * http://localhost:8080/thymeleaf7/5
+    @GetMapping({"/thymeleaf7", "/thymeleaf7/", "/thymeleaf7/{id}"})
     public String getThymeleaf7(Model model, @PathVariable(name = "id", required = false) Long id) {
 
         model.addAttribute("key_model1", "id : " + id);
