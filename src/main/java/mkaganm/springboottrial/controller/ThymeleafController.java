@@ -66,11 +66,10 @@ public class ThymeleafController {
     public String getThymeleaf6(Model model) {
 
         List<ProductDto> list = new ArrayList<>();
-        list.add(ProductDto.builder().productId(0L).productName("Product Name0").productPrice(2500).build());
-        list.add(ProductDto.builder().productId(1L).productName("Product Name1").productPrice(2501).build());
-        list.add(ProductDto.builder().productId(2L).productName("Product Name2").productPrice(2502).build());
-        list.add(ProductDto.builder().productId(3L).productName("Product Name3").productPrice(2503).build());
-
+        list.add(ProductDto.builder().productId(0L).productName("Product Name0").productPrice(2000).build());
+        list.add(ProductDto.builder().productId(1L).productName("Product Name1").productPrice(3000).build());
+        list.add(ProductDto.builder().productId(2L).productName("Product Name2").productPrice(4000).build());
+        list.add(ProductDto.builder().productId(3L).productName("Product Name3").productPrice(5000).build());
 
         model.addAttribute("key_model3", list);
         return "thymeleaf6";
