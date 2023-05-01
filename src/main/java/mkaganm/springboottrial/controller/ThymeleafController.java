@@ -11,7 +11,9 @@ import java.util.List;
 @Controller
 public class ThymeleafController {
 
-    @GetMapping("/")
+    // * http://localhost:8080/
+    // * http://localhost:8080/index
+    @GetMapping({"/", "/index"})
     public String index() {
         return "index";
     }
