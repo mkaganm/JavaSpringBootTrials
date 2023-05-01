@@ -4,6 +4,7 @@ import mkaganm.springboottrial.dto.ProductDto;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -83,16 +84,10 @@ public class ThymeleafController {
     }
 
     // * http://localhost:8080/thymeleaf7
-    @GetMapping("/thymeleaf7")
-    public String getThymeleaf7(Model model) {
+    @GetMapping("/thymeleaf7/{id}")
+    public String getThymeleaf7(Model model, @PathVariable(name = "id")Long id) {
 
-        ProductDto productDto = ProductDto.builder()
-                .productId(0L)
-                .productName("Product Name")
-                .productPrice(2500)
-                .build();
-
-        model.addAttribute("key_model3", productDto);
+        model.addAttribute("key_model1","id" + id);
 
         return "thymeleaf7";
     }
