@@ -96,7 +96,11 @@ public class ThymeleafController {
 
     // * http://localhost:8080/thymeleaf8?id=4&name=MKM
     @GetMapping({"/thymeleaf8"})
-    public String getThymeleaf8(Model model, @RequestParam(name = "id") Long id) {
+    public String getThymeleaf8(
+            Model model,
+            @RequestParam(name = "id", required = false, defaultValue = "0") Long id,
+            @RequestParam(name = "name", required = false, defaultValue = "0") String name
+    ) {
 
         if (id != null) model.addAttribute("key_model1", "id : " + id);
         else model.addAttribute("key_model1", "id : not found");
