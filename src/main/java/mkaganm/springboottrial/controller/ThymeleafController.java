@@ -94,7 +94,7 @@ public class ThymeleafController {
         return "thymeleaf7";
     }
 
-    // * http://localhost:8080/thymeleaf8?id=4
+    // * http://localhost:8080/thymeleaf8?id=4&name=MKM
     @GetMapping({"/thymeleaf8"})
     public String getThymeleaf8(Model model, @RequestParam(name = "id") Long id) {
 
