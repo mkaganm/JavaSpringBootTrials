@@ -102,7 +102,7 @@ public class ThymeleafController {
             @RequestParam(name = "name", required = false, defaultValue = "0") String name
     ) {
 
-        if (id != null) model.addAttribute("key_model1", "id : " + id);
+        if (id != null) model.addAttribute("key_model1", "id : " + id + " | name : " + name);
         else model.addAttribute("key_model1", "id : not found");
 
         return "thymeleaf8";
