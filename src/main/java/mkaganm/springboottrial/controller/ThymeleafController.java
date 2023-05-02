@@ -100,7 +100,8 @@ public class ThymeleafController {
     @GetMapping({"/thymeleaf8"})
     public String getThymeleaf8(Model model, @RequestParam(name = "id") Long id) {
 
-        model.addAttribute("key_model1", "id : " + id);
+        if (id != null) model.addAttribute("key_model1", "id : " + id);
+        else model.addAttribute("key_model1", "id : not found");
 
         return "thymeleaf8";
     }
